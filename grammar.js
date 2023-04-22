@@ -109,21 +109,8 @@ module.exports = grammar({
         vocab_name: $ => $._name,
         type: $ => prec(-1, choice(
             $._name,
-            $._builtin_type,
         )),
         argument_decl: $ => $.type,
-        _builtin_type: $ => choice(
-            $.Int_keyword,
-            $.Bool_keyword,
-            $.Real_keyword,
-        ),
-        Int_keyword: $ => 'Int',
-        Bool_keyword: $ => 'Bool',
-        Real_keyword: $ => 'Real',
-        bool: $ => choice(
-            'True',
-            'False',
-        ),
         int: $ => /[0-9]+/,
         real: $ => /[0-9]+.\[0-9]+/,
         _name: $ => /[^\s:\(\)\.{},]+/,
@@ -167,7 +154,6 @@ module.exports = grammar({
         value: $ => choice(
             $.real,
             $.int,
-            $.bool,
             $.type,
         ),
         numeration: $ => seq(
