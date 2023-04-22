@@ -1,11 +1,11 @@
 (function
-  (name)) @function
+  (name) @function)
 (procedure_decl
-  (name)) @function
+  (name) @function)
 (type_decl
-  (name)) @type
+  (name) @type)
 (value
-  (name)) @type
+  (name) @type)
 
 [
  "True"
@@ -21,4 +21,5 @@
 
 [
  "type"
+ "procedure"
 ] @keyword
