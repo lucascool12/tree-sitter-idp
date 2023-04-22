@@ -385,6 +385,10 @@
           {
             "type": "SYMBOL",
             "name": "_name"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "_builtin_type"
           }
         ]
       }
@@ -392,6 +396,48 @@
     "argument_decl": {
       "type": "SYMBOL",
       "name": "type"
+    },
+    "_builtin_type": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "Int_keyword"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "Bool_keyword"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "Real_keyword"
+        }
+      ]
+    },
+    "Int_keyword": {
+      "type": "STRING",
+      "value": "Int"
+    },
+    "Bool_keyword": {
+      "type": "STRING",
+      "value": "Bool"
+    },
+    "Real_keyword": {
+      "type": "STRING",
+      "value": "Real"
+    },
+    "bool": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "True"
+        },
+        {
+          "type": "STRING",
+          "value": "False"
+        }
+      ]
     },
     "int": {
       "type": "PATTERN",
@@ -749,6 +795,10 @@
         {
           "type": "SYMBOL",
           "name": "int"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bool"
         },
         {
           "type": "SYMBOL",

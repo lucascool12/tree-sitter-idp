@@ -90,6 +90,11 @@
     }
   },
   {
+    "type": "bool",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "cross_product",
     "named": true,
     "fields": {},
@@ -316,7 +321,25 @@
   {
     "type": "type",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "Bool_keyword",
+          "named": true
+        },
+        {
+          "type": "Int_keyword",
+          "named": true
+        },
+        {
+          "type": "Real_keyword",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "type_decl",
@@ -392,6 +415,10 @@
       "multiple": false,
       "required": true,
       "types": [
+        {
+          "type": "bool",
+          "named": true
+        },
         {
           "type": "int",
           "named": true
@@ -491,6 +518,26 @@
   },
   {
     "type": ":",
+    "named": false
+  },
+  {
+    "type": "Bool_keyword",
+    "named": true
+  },
+  {
+    "type": "False",
+    "named": false
+  },
+  {
+    "type": "Int_keyword",
+    "named": true
+  },
+  {
+    "type": "Real_keyword",
+    "named": true
+  },
+  {
+    "type": "True",
     "named": false
   },
   {
