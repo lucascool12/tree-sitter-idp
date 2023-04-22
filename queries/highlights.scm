@@ -2,15 +2,19 @@
   (name) @function)
 (procedure_decl
   (name) @function)
+
+(function_decl
+  (name) @function)
 (type_decl
   (name) @type)
-(value
-  (name) @type)
+(type) @type
+(identifier
+  (name) @variable)
 
 [
- "True"
- "False"
-] @constant.builtin
+  "True"
+  "False"
+] @boolean
 
 [
  (int)
@@ -22,4 +26,9 @@
 [
  "type"
  "procedure"
+ "theory"
+ "vocabulary"
+ "structure"
+ (in)
+ (not_in)
 ] @keyword
