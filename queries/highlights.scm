@@ -1,4 +1,5 @@
-(function) @function
+(function
+  (name)) @function
 (procedure_decl
   (name)) @function
 (type_decl
