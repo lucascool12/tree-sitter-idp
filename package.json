@@ -1,0 +1,14 @@
+{
+  "name": "tree-sitter-idp",
+  "version": "1.0.0",
+  "description": "tree-sitter-idp",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "author": "Lucas Van Laer",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.17.0"
+  }
+}
